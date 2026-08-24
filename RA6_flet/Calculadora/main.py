@@ -10,12 +10,12 @@ class CalcButton (ft.Button):
     
 @ft.control
 class DigitButton (CalcButton):
-    bgcolor: ft.Colors = ft.Colors.WHITE_24
-    color: ft.Colors = ft.Colors.WHITE
+    bgcolor: ft.Colors = ft.Colors.WHITE
+    color: ft.Colors = ft.Colors.BLACK
 
 @ft.control
 class ActionButton (CalcButton):
-    bgcolor: ft.Colors = ft.Colors.ORANGE
+    bgcolor: ft.Colors = ft.Colors.GREEN
     color: ft.Colors = ft.Colors.WHITE
     
 @ft.control
@@ -29,7 +29,7 @@ class CalculatorApp (ft.Container):
     def init (self): 
         self.reset()
         self.width = 350
-        self.bgcolor = ft.Colors.BLACK
+        self.bgcolor = ft.Colors.BLUE
         self.border_radius = ft.BorderRadius.all (20)
         self.padding = 20
         self.result = ft.Text (value = "0", color = ft.Colors.WHITE, size = 20)
